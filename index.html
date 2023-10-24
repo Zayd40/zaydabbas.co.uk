@@ -1,147 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Zayd Abbas</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zayd Abbas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 
-            body {
-                background-image: linear-gradient(to bottom, #000000, #3e3837, #7c6f69, #baaf9f, #f5f5dc);
-            }
-            
-            body {
-                margin: 0;
-                font-family: 'Work Sans', sans-serif;
-            }
-            .navbar-brand {
-                font-size: 1.5em;
-                color: #fff;
-                margin-left: 15px;
-            }
-            .navbar-nav {
-                margin: 0 auto;
-            }
-            .nav-link {
-                font-size: 1.2em;
-                color: #fff;
-                margin: 0 15px;
-            }
-            .contact-button {
-                font-size: 1.2em;
-                margin-right: 15px;
-            }
-        </style>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">Zayd Abbas</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
-                    </li>
+        body {
+            background-image: linear-gradient(to bottom, #1a1a1a, #444444);
+            margin: 0;
+            font-family: 'Work Sans', sans-serif;
+            color: #fff; /* Set the default text color to white */
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .navbar-brand {
+            font-size: 1.5em;
+            color: #fff;
+            margin-left: 15px;
+        }
+        
+        .navbar-nav {
+            margin: 0 auto;
+        }
+        .nav-link {
+            font-size: 1.2em;
+            margin: 0 15px;
+            transition: color 0.3s;
+            color: #fff; /* Set the text color to white */
+        }
+        .contact-button {
+            font-size: 1.2em;
+            margin-right: 15px;
+            color: #fff; /* Set the text color to white */
+        }
+        .sectionzaydabbas {
+            text-align: center;
+            padding: 50px 0;
+            color: #fff; /* Set the text color to white */
+        }
+        .sectionzaydabbas h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Zayd Abbas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-light contact-button">Contact</button>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-3">
+                <img src="2cc9af63b82a21fdee85c1abd9084a13-sticker.png" alt="Profile Picture" class="rounded-circle img-fluid">
+            </div>
+            <div class="col-md-9 sectionzaydabbas">
+                <h2>Zayd Abbas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, dui at pellentesque tincidunt, dolor nisl feugiat elit, vitae tempor mi sem a libero.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, dui at pellentesque tincidunt, dolor nisl feugiat elit, vitae tempor mi sem a libero. Duis laoreet odio et ante auctor convallis.</p>
+
+                <h2>Experience</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor eu justo interdum varius et eu neque. Vivamus tempus vel ipsum non pellentesque.</p>
+
+                <h2>Education</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Duis euismod vehicula justo, vel bibendum nisl tempor at. Suspendisse potenti. Phasellus non magna nec augue tincidunt facilisis.</p>
+            </div>
+            <div class="col-lg-4">
+                <h2>Contact Me</h2>
+                <p>If you have any questions or would like to get in touch, feel free to reach out to me:</p>
+                <ul>
+                    <li>Email: example@example.com</li>
+                    <li>Phone: (123) 456-7890</li>
                 </ul>
-                <button class="btn btn-outline-light contact-button">Contact</button>
-            </div>
-        </nav>
-        <!-- Content goes here -->
-        <div class="container mt-5" style="color: white;">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="1b602fdbbd0efd92a0eda999034478b3-sticker.png" alt="Profile Picture" class="rounded-circle img-fluid">
-                </div>
-                <div class="col-md-9">
-                    <h2>Zayd Abbas</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, dui at pellentesque tincidunt, dolor nisl feugiat elit, vitae tempor mi sem a libero.</p>
-                </div>
             </div>
         </div>
-        
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, dui at pellentesque tincidunt, dolor nisl feugiat elit, vitae tempor mi sem a libero. Duis laoreet odio et ante auctor convallis.</p>
-        
-                    <h2>Experience</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor eu justo interdum varius et eu neque. Vivamus tempus vel ipsum non pellentesque.</p>
-        
-                    <h2>Education</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Duis euismod vehicula justo, vel bibendum nisl tempor at. Suspendisse potenti. Phasellus non magna nec augue tincidunt facilisis.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Contact Me</h2>
-                    <p>If you have any questions or would like to get in touch, feel free to reach out to me:</p>
-                    <ul>
-                        <li>Email: example@example.com</li>
-                        <li>Phone: (123) 456-7890</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, dui at pellentesque tincidunt, dolor nisl feugiat elit, vitae tempor mi sem a libero. Duis laoreet odio et ante auctor convallis.</p>
-        
-                    <h2>Experience</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor eu justo interdum varius et eu neque. Vivamus tempus vel ipsum non pellentesque.</p>
-        
-                    <h2>Education</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Duis euismod vehicula justo, vel bibendum nisl tempor at. Suspendisse potenti. Phasellus non magna nec augue tincidunt facilisis.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Contact Me</h2>
-                    <p>If you have any questions or would like to get in touch, feel free to reach out to me:</p>
-                    <ul>
-                        <li>Email: example@example.com</li>
-                        <li>Phone: (123) 456-7890</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, dui at pellentesque tincidunt, dolor nisl feugiat elit, vitae tempor mi sem a libero. Duis laoreet odio et ante auctor convallis.</p>
-        
-                    <h2>Experience</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor eu justo interdum varius et eu neque. Vivamus tempus vel ipsum non pellentesque.</p>
-        
-                    <h2>Education</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Duis euismod vehicula justo, vel bibendum nisl tempor at. Suspendisse potenti. Phasellus non magna nec augue tincidunt facilisis.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Contact Me</h2>
-                    <p>If you have any questions or would like to get in touch, feel free to reach out to me:</p>
-                    <ul>
-                        <li>Email: example@example.com</li>
-                        <li>Phone: (123) 456-7890</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <!-- Bootstrap JavaScript dependencies -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
 
-    </body>
+    <!-- Bootstrap JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Wait for the document to fully load
+        document.addEventListener("DOMContentLoaded", function() {
+            // Define the animation
+            gsap.from(".sectionzaydabbas", {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                ease: "power2.out"
+            });
+        });
+    </script>
+</body>
 </html>
