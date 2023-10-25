@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zayd Abbas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
@@ -13,40 +14,84 @@
             background-image: linear-gradient(to bottom, #1a1a1a, #444444);
             margin: 0;
             font-family: 'Work Sans', sans-serif;
-            color: #fff; /* Set the default text color to white */
+            color: #fff;
         }
-        
-        body {
-            margin: 0;
-            font-family: 'Work Sans', sans-serif;
-        }
+
         .navbar-brand {
             font-size: 1.5em;
             color: #fff;
             margin-left: 15px;
         }
-        
+
+        .navbar-toggler {
+            color: #fff;
+        }
+
         .navbar-nav {
             margin: 0 auto;
         }
+
         .nav-link {
             font-size: 1.2em;
             margin: 0 15px;
             transition: color 0.3s;
-            color: #fff; /* Set the text color to white */
+            color: #fff;
+            cursor: pointer;
         }
-        .contact-button {
-            font-size: 1.2em;
-            margin-right: 15px;
-            color: #fff; /* Set the text color to white */
+
+        .navbar-icons {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding-right: 15px;
         }
-        .sectionzaydabbas {
+
+        .navbar-icon {
+            color: #fff;
+            font-size: 1.5em;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .social-icon {
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .section {
             text-align: center;
             padding: 50px 0;
-            color: #fff; /* Set the text color to white */
         }
-        .sectionzaydabbas h2 {
+
+        .section h2 {
             margin-bottom: 20px;
+        }
+
+
+        /* Center align text on small screens (mobile view) */
+        @media (max-width: 767px) {
+            .text-center-sm {
+                text-align: center !important;
+            }
+
+            .navbar-icons {
+                margin-left: auto;
+            }
+            .navbar-collapse {
+            background-color: #000000; /* Change this color to your desired background color */
+        }
+
+
         }
     </style>
 </head>
@@ -59,52 +104,90 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" data-scroll-to="intro">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
+                    <a class="nav-link" data-scroll-to="portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
+                    <a class="nav-link" data-scroll-to="about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll-to="contact">Contact</a>
                 </li>
             </ul>
-            <button class="btn btn-outline-light contact-button">Contact</button>
+        </div>
+        <div class="navbar-icons">
+            <ul class="social-icons">
+                <li class="social-icon"><a href="https://www.instagram.com/zayd4040_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="social-icon"><a href="mailto:zaydabbas40@gmail.com"><i class="far fa-envelope"></i></a></li>
+            </ul>
         </div>
     </nav>
 
     <div class="container mt-5">
         <div class="row d-flex align-items-center">
-            <div class="col-md-3">
+            <div class="col-md-3 text-center-sm"> <!-- Added class "text-center-sm" -->
                 <img src="2cc9af63b82a21fdee85c1abd9084a13-sticker.png" alt="Profile Picture" class="rounded-circle img-fluid">
             </div>
-            <div class="col-md-9 sectionzaydabbas">
+            <div class="col-md-9 sectionzaydabbas text-center-sm"> <!-- Added class "text-center-sm" -->
                 <h2>Zayd Abbas</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, dui at pellentesque tincidunt, dolor nisl feugiat elit, vitae tempor mi sem a libero.</p>
             </div>
         </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 section " id="portfolio">
+        <h2>Portfolio</h2>
         <div class="row">
-            <div class="col-lg-8">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, dui at pellentesque tincidunt, dolor nisl feugiat elit, vitae tempor mi sem a libero. Duis laoreet odio et ante auctor convallis.</p>
-
-                <h2>Experience</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor eu justo interdum varius et eu neque. Vivamus tempus vel ipsum non pellentesque.</p>
-
-                <h2>Education</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Duis euismod vehicula justo, vel bibendum nisl tempor at. Suspendisse potenti. Phasellus non magna nec augue tincidunt facilisis.</p>
-            </div>
+            <!-- Example Work Item -->
             <div class="col-lg-4">
-                <h2>Contact Me</h2>
-                <p>If you have any questions or would like to get in touch, feel free to reach out to me:</p>
-                <ul>
-                    <li>Email: example@example.com</li>
-                    <li>Phone: (123) 456-7890</li>
-                </ul>
+               
+                <img src="work_sample_1.jpg" alt="Work Sample 1" class="img-fluid">
+                <h4>Work Title 1</h4>
+                <p>High-quality images or samples of your work are essential. Provide a variety to showcase your range of skills.</p>
+                <p>For each piece, include a brief description or context. Explain the concept, tools used, and any challenges you overcame.</p>
+                <!-- Add Client/Testimonial if applicable -->
             </div>
+            <!-- Add more work items as needed -->
         </div>
+    </div>
+
+    <div class="container mt-5 section" id="about">
+        <h2>About Me</h2>
+        <p>
+            Provide a brief overview of who you are, your background, and what drives your creativity.
+        </p>
+        <p>
+            <strong>Skills:</strong> List your relevant skills and strengths. Be specific about software, techniques, or methods you excel at.
+        </p>
+        <p>
+            <strong>Education/Experience:</strong> Mention your educational background and any relevant work experiences.
+        </p>
+        <!-- Add Achievements/Awards if applicable -->
+    </div>
+
+    <div class="container mt-5 section" id="contact">
+        <h2>Contact Information</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
     <!-- Bootstrap JavaScript dependencies -->
@@ -113,6 +196,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth scroll to sections
+            const links = document.querySelectorAll('[data-scroll-to]');
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-scroll-to');
+                    const targetElement = document.getElementById(targetId);
+                    gsap.to(window, {duration: 1, scrollTo: {y: targetElement}});
+                });
+            });
+        }); 
+
         // Wait for the document to fully load
         document.addEventListener("DOMContentLoaded", function() {
             // Define the animation
@@ -123,6 +218,6 @@
                 ease: "power2.out"
             });
         });
-    </script>
+    </script>    
 </body>
 </html>
